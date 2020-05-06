@@ -28,9 +28,12 @@ mongoose.connect(conn,{ useNewUrlParser: true, useUnifiedTopology: true },(err,r
     }   
 })
 
+
 // PORT NUMBER TO CONNECT FOLLOOWING HOST . Process.env.PORT to connect heroku server
 port = process.env.PORT|| 3000; 
 
+
+const process = spawn('python',["../route/hello.py"]);
 // Cross origin  platform to get data from serve to host in json 
 app.use(cors());
 app.use(bodyParse.json());
