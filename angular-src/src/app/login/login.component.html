@@ -1,0 +1,163 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login form</title>
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+</head>
+<body>
+    <br><br><br><br>
+ 
+
+        <form class="form-signin" (submit)="onLoginSubumit()" mt-3>
+                <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+                <label for="inputEmail" class="sr-only"  >Email address</label>
+                <input type="email" id="inputEmail" [(ngModel)]="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+               
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword"[(ngModel)]="password" name="password" class="form-control" placeholder="Password" required>
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Login  with Google </button>
+                
+              </form>
+</body>
+</html>  -->
+
+ <!-- <!DOCTYPE html>
+
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+ </head>
+ <body>
+  <app-nav></app-nav>
+     <div class="limiter">
+       <div class="container-login100" style="background-image: url('one/x.jpg');">
+         <div class="wrap-login100 p-t-30 p-b-50">
+           <span class="login100-form-title p-b-41">
+             Account Login
+           </span>
+           <form class="login100-form validate-form p-b-33 p-t-5 " (submit)="onLoginSubumit()">               
+             <div class="wrap-input100 validate-input alert-validate" data-validate="Enter username">
+               <input class="input100" type="email"  id="inputEmail" [(ngModel)]="email" name="email" placeholder="Email id">
+               <span class="focus-input100" data-placeholder=""></span>  
+             </div>
+   
+             <div class="wrap-input100 validate-input alert-validate" data-validate="Enter password">
+               <input class="input100" type="password"   id="inputPassword"[(ngModel)]="password" name="password" placeholder="Password">
+               <span class="focus-input100" data-placeholder=""></span>
+             </div>
+   
+             <div class="container-login100-form-btn m-t-32">
+               <button class="login100-form-btn">
+                 Login
+               </button>
+               <br>
+             </div>
+             <small class="text-center" >  <a  [routerLink]="['/register']"> Need a new Account? sign up here. </a></small> 
+   
+           </form>
+         </div>
+       </div>
+     </div>
+     
+ </body>
+ </html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <app-nav></app-nav>
+  
+  <div class="cotn_principal mt-3">
+    <br><br><br><br><br><br>
+    <div class="cont_centrar">
+      <div class="cont_login">
+    <div class="cont_info_log_sign_up">
+          <div class="col_md_login">
+    <div class="cont_ba_opcitiy">
+            <h2>LOGIN</h2>  
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+      <button class="btn_login" (click)="cambiar_login()">LOGIN</button>
+      </div>
+      </div>
+    <div class="col_md_sign_up">
+    <div class="cont_ba_opcitiy">
+      <h2>SIGN UP</h2>
+    
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+      <button class="btn_sign_up" (click)="cambiar_sign_up()">SIGN UP</button>
+    </div>
+      </div>
+           </div>
+        <div class="cont_back_info">
+           <div class="cont_img_back_grey">
+           <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+           </div>
+           
+        </div>
+    <div class="cont_forms" >
+        <div class="cont_img_back_">
+           <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+           </div>
+     <div class="cont_form_login">
+    <a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+       <h2>LOGIN</h2>
+     <input type="text" id="inputEmail" [(ngModel)]="email" name="email" placeholder="Email" />
+    <input type="password" id="inputPassword"[(ngModel)]="password" name="password" placeholder="Password" />
+    <button class="btn_login" (click)="onLoginSubumit()">LOGIN</button>
+      </div>
+      
+       <div class="cont_form_sign_up">
+    <a href="#" (click)="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+         <h2>SIGN UP</h2>   
+    <input type="text" placeholder="Email" />
+    <input type="text" placeholder="User" />
+    <input type="phone_number" placeholder="phone number" />
+    <input type="password" placeholder="Password" />
+    <input type="password" placeholder="Confirm Password" />
+    <button class="btn_sign_up" (click)="cambiar_sign_up()">SIGN UP</button>
+    
+      </div>
+    
+        </div>
+        
+      </div>
+     </div>
+    </div>
+</body>
+</html>

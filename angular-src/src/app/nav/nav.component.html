@@ -1,0 +1,204 @@
+<!-- <!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700' rel='stylesheet' type='text/css'>
+	<title>Secondary Expandable Menu</title>
+</head>
+<body>
+	<header>
+		<a id="cd-logo"  [routerLink]="['/homepage']">MyHome.Com</a>
+		<nav id="cd-top-nav">
+			<ul>
+		<li> <a class="nav-link " *ngIf="!auth.loggedIn()" [routerLink]="['/register']">Register</a></li>
+        <li> <a class="nav-link " *ngIf="!auth.loggedIn()"[routerLink]="['/login']">login</a></li>
+		<li> <a class="nav-link"  *ngIf="auth.loggedIn()" (click)="onLogOutClick()" [routerLink]="['/homepage']">Logout</a></li>
+		<li> <a class="nav-link"  *ngIf="auth.loggedIn()" [routerLink]="['/profile']">Profile</a></li>
+			</ul>
+		</nav>
+		<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
+	</header>
+	<main class="cd-main-content">
+
+		 put your content here -->
+
+	<!-- </main>
+
+	<nav id="cd-lateral-nav">
+		<ul class="cd-navigation">
+			<li class="item-has-children">
+				<a href="#0">Services</a>
+				<ul class="sub-menu">
+					<li><a href="#0">Brand</a></li>
+					<li><a href="#0">Web Apps</a></li>  
+					<li><a href="#0">Mobile Apps</a></li>
+				</ul>
+			</li>  item-has-children -->
+
+			<!-- <li class="item-has-children">
+				<a href="#0">Products</a>
+				<ul class="sub-menu">
+					<li><a href="#0">Product 1</a></li>
+					<li><a href="#0">Product 2</a></li>
+					<li><a href="#0">Product 3</a></li>
+					<li><a href="#0">Product 4</a></li>
+					<li><a href="#0">Product 5</a></li>
+				</ul>
+			</li> item-has-children -->
+
+			<!-- <li class="item-has-children">
+				<a href="#0">Stockists</a>
+				<ul class="sub-menu">
+					<li><a href="#0">London</a></li>
+					<li><a href="#0">New York</a></li>
+					<li><a href="#0">Milan</a></li>
+					<li><a href="#0">Paris</a></li>
+				</ul>
+			</li> 
+		</ul> cd-navigation -->
+
+		<!-- <ul class="cd-navigation cd-single-item-wrapper">
+			<li><a href="#0">Tour</a></li>
+			<li><a href="#0">Login</a></li>
+			<li><a href="#0">Register</a></li>
+			<li><a href="#0">Pricing</a></li>
+			<li><a href="#0">Support</a></li>
+		</ul> cd-single-item-wrapper -->
+
+		<!-- <ul class="cd-navigation cd-single-item-wrapper">
+			<li><a class="current" href="#0">Journal</a></li>
+			<li><a href="#0">FAQ</a></li>
+			<li><a href="#0">Terms &amp; Conditions</a></li>
+			<li><a href="#0">Careers</a></li>
+			<li><a href="#0">Students</a></li>
+		</ul> cd-single-item-wrapper -->
+
+		<!-- <div class="cd-navigation socials">
+			<a class="cd-twitter cd-img-replace" href="#0">Twitter</a>
+			<a class="cd-github cd-img-replace" href="#0">Git Hub</a>
+			<a class="cd-facebook cd-img-replace" href="#0">Facebook</a>
+			<a class="cd-google cd-img-replace" href="#0">Google Plus</a>
+		</div>  socials -->
+	<!-- </nav> -->
+	
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/main.js"></script>  Resource jQuery -->
+<!-- </body>
+</html>    -->
+
+<!-- Demo 2 -->
+<!-- <!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">MyHome.com</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a *ngIf="!auth.loggedIn()" [routerLink]="['/register']">Sign in/up</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+	</nav>
+	
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<body class="hero-anime">	
+
+		<div class="navigation-wrap bg-light start-header start-style">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="navbar navbar-expand-md navbar-light">
+						
+							<!-- <a class="navbar-brand" href="https://themeforest.net/user/ig_design/portfolio" target="_blank"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/logo.svg" alt="">MyHome.com</a>	 -->
+							<a class="navbar-brand"  target="_blank" [routerLink]="['/homepage']">MyHome.com</a>	
+							
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav ml-auto py-4 py-md-0">
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+										<a class="nav-link" 	 [routerLink]="['/homepage']" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+										
+									</li>
+								
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+										<a class="nav-link" href="#">Service</a>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+										<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Filter</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+											<a class="dropdown-item" href="#">Another action</a>
+										</div>
+									</li>
+								
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+										<a class="nav-link" href="#"  *ngIf="!auth.loggedIn()" [routerLink]="['/login']">Login</a>
+									</li>
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+										<a class="nav-link" href="#"  *ngIf="auth.loggedIn()" (click)="onLogOutClick()" [routerLink]="['/homepage']">Logout</a>
+									</li>
+
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+										<a class="nav-link"  [routerLink]="['/aboutus']">About us</a>
+									</li>
+
+									<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+										<a class="nav-link"  *ngIf="auth.loggedIn()" [routerLink]="['/profile']">Profile</a>
+									</li>
+								</ul>
+							</div>
+							
+						</nav>		
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	
+	  
+	<!-- Link to page
+	================================================== -->
+	
+	<a href="https://themeforest.net/user/ig_design/portfolio"      class="link-to-portfolio" target=”_blank”></a>
+	
+	</body>	
+</body>
+</html>
