@@ -10,7 +10,7 @@ const conn = 'mongodb+srv://dbUser:dbUser@cluster0-2pghj.mongodb.net/test?retryW
 const passportSetup =  require('./config/passport-setup')
 
 const multer = require('multer');
-const GridFsStorage  = require('multer-gridfs-storage');
+
 const methodOverride = require('method-override');
 
 const spawn =   require('child_process').spawn;
@@ -28,21 +28,19 @@ mongoose.connect(conn,{ useNewUrlParser: true, useUnifiedTopology: true },(err,r
     }   
 })
 
-
 // PORT NUMBER TO CONNECT FOLLOOWING HOST . Process.env.PORT to connect heroku server
-port = process.env.PORT|| 3000; 
+var port = process.env.PORT || 3000; 
 
-
-const process = spawn('python',["../route/hello.py"]);
 // Cross origin  platform to get data from serve to host in json 
 app.use(cors());
 app.use(bodyParse.json());
 
+// const process = spawn('python',["../route/hello.py"]);
 
 
-process.stdout.on('data',(data)=>{
-    console.log(data.toString()) 
-})
+// process.stdout.on('data',(data)=>{
+//     console.log(data.toString()) 
+// })
 
 
 app.get('/',(req,res)=>{
